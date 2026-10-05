@@ -19,7 +19,6 @@ public class DiariesTest {
         diaries.createDiary("New Diary", "1234");
         Diary diary = diaries.findDiaryByUsername("New Diary");
         assertEquals(diary.getUsername(), "New Diary");
-
     }
 
     @Test

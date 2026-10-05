@@ -6,12 +6,9 @@ import java.util.List;
 public class Diaries {
 
     private List<Diary> diaries = new ArrayList<>();
-    private int diaryCount = 1;
-
 
     public void createDiary(String username, String password){
         Diary diary = new Diary(username, password);
-        diaryCount++;
         diaries.add(diary);
     }
 
@@ -23,7 +20,6 @@ public class Diaries {
         }
         return null;
     }
-
 
     public void deleteDiary(String username, String password){
         for (Diary diary : diaries) {
