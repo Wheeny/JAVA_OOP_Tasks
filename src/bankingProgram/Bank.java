@@ -50,8 +50,9 @@ public class Bank {
 
 
     public void transfer(int amount, int sender, int receiver, int pin) {
-        withdraw(pin, amount, sender);
+        withdraw(amount, pin, sender);
         deposit(amount, receiver);
     }
+
 
 }
